@@ -22,7 +22,9 @@ public:
     void setCloseCallback(EventCallback cb) { closeCallback_ = std::move(cb); }
     void setErrorCallback(EventCallback cb) { errorCallback_ = std::move(cb); }
 
+    // 防止channel被手动remove时，channel还在执行回调操作
     void tie(const std::shared_ptr<void>&);
+
     int fd() const { return fd_; }
     int events() const { return events_; }
     void set_revents(int revt) { revents_ = revt; }
@@ -71,15 +73,16 @@ private:
     static const int kNoneEvent;
     static const int kReadEvent;
     static const int kWriteEvent;
-    EventLoop* loop_;
-    const int fd_;
-    int events_;
-    int revents_;
+    EventLoop* loop_; // 事件循环
+    const int fd_; // Poller监听的对象
+    int events_; // 注册fd感兴趣的事件
+    int revents_; // poller返回的具体发生的事件
     int index_;
 
-    std::weak_ptr<void> tie_;
+    std::weak_ptr<void> tie_; // 获取当前对象的智能指针
     bool tied_;
 
+    // 不同事件的回调函数
     ReadEventCallback readCallback_;
     EventCallback writeCallback_;
     EventCallback closeCallback_;

@@ -19,14 +19,17 @@ Channel::~Channel()
 {
 }
 
+// 何时调用tie？
 void Channel::tie(const std::shared_ptr<void>& obj)
 {
     tie_ = obj;
     tied_ = true;
 }
 
+// 当改变channel所表示的fd的events事件后，unpdate负责更改poller中epoll_ctl的事件
 void Channel::update()
 {
+    // 通过channel所属的EventLoop,调用poller的相应方法，注册fd的events事件
 }
 
 void Channel::remove()
