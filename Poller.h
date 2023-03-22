@@ -23,7 +23,7 @@ public:
 
 protected:
     using ChannelMap = std::unordered_map<int, Channel*>;
-    ChannelMap channels_;
+    ChannelMap channels_; // 已经向poller中注册过的事件
 
 private:
     EventLoop* ownerLoop_;

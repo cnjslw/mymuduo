@@ -29,9 +29,10 @@
         char buf[1024] = { 0 };                           \
         snprintf(buf, 1024, logmsgformat, ##__VA_ARGS__); \
         logger.log(buf);                                  \
+        exit(-1);                                         \
     } while (0)
 
-#ifdef DEBUG
+#ifdef MUDEBUG
 #define LOG_DEBUG(logmsgformat, ...)                      \
     do {                                                  \
         Logger& logger = Logger::instance();              \
@@ -40,6 +41,8 @@
         snprintf(buf, 1024, logmsgformat, ##__VA_ARGS__); \
         logger.log(buf);                                  \
     } while (0)
+#else
+#define LOG_DEBUG(logmsgformat, ...)
 #endif
 
 // 日志级别 INFO ERROR FATAL DEBUG

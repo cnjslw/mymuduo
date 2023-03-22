@@ -153,6 +153,78 @@ Channel.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Channel.cc.s
 .PHONY : Channel.cc.s
 
+CurrentThread.o: CurrentThread.cc.o
+.PHONY : CurrentThread.o
+
+# target to build an object file
+CurrentThread.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/CurrentThread.cc.o
+.PHONY : CurrentThread.cc.o
+
+CurrentThread.i: CurrentThread.cc.i
+.PHONY : CurrentThread.i
+
+# target to preprocess a source file
+CurrentThread.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/CurrentThread.cc.i
+.PHONY : CurrentThread.cc.i
+
+CurrentThread.s: CurrentThread.cc.s
+.PHONY : CurrentThread.s
+
+# target to generate assembly for a file
+CurrentThread.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/CurrentThread.cc.s
+.PHONY : CurrentThread.cc.s
+
+DefaultPoller.o: DefaultPoller.cc.o
+.PHONY : DefaultPoller.o
+
+# target to build an object file
+DefaultPoller.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/DefaultPoller.cc.o
+.PHONY : DefaultPoller.cc.o
+
+DefaultPoller.i: DefaultPoller.cc.i
+.PHONY : DefaultPoller.i
+
+# target to preprocess a source file
+DefaultPoller.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/DefaultPoller.cc.i
+.PHONY : DefaultPoller.cc.i
+
+DefaultPoller.s: DefaultPoller.cc.s
+.PHONY : DefaultPoller.s
+
+# target to generate assembly for a file
+DefaultPoller.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/DefaultPoller.cc.s
+.PHONY : DefaultPoller.cc.s
+
+EPollPoller.o: EPollPoller.cc.o
+.PHONY : EPollPoller.o
+
+# target to build an object file
+EPollPoller.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/EPollPoller.cc.o
+.PHONY : EPollPoller.cc.o
+
+EPollPoller.i: EPollPoller.cc.i
+.PHONY : EPollPoller.i
+
+# target to preprocess a source file
+EPollPoller.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/EPollPoller.cc.i
+.PHONY : EPollPoller.cc.i
+
+EPollPoller.s: EPollPoller.cc.s
+.PHONY : EPollPoller.s
+
+# target to generate assembly for a file
+EPollPoller.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/EPollPoller.cc.s
+.PHONY : EPollPoller.cc.s
+
 EventLoop.o: EventLoop.cc.o
 .PHONY : EventLoop.o
 
@@ -201,6 +273,30 @@ InetAddress.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/InetAddress.cc.s
 .PHONY : InetAddress.cc.s
 
+Poller.o: Poller.cc.o
+.PHONY : Poller.o
+
+# target to build an object file
+Poller.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Poller.cc.o
+.PHONY : Poller.cc.o
+
+Poller.i: Poller.cc.i
+.PHONY : Poller.i
+
+# target to preprocess a source file
+Poller.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Poller.cc.i
+.PHONY : Poller.cc.i
+
+Poller.s: Poller.cc.s
+.PHONY : Poller.s
+
+# target to generate assembly for a file
+Poller.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Poller.cc.s
+.PHONY : Poller.cc.s
+
 TcpServer.o: TcpServer.cc.o
 .PHONY : TcpServer.o
 
@@ -224,6 +320,30 @@ TcpServer.s: TcpServer.cc.s
 TcpServer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/TcpServer.cc.s
 .PHONY : TcpServer.cc.s
+
+Thread.o: Thread.cc.o
+.PHONY : Thread.o
+
+# target to build an object file
+Thread.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Thread.cc.o
+.PHONY : Thread.cc.o
+
+Thread.i: Thread.cc.i
+.PHONY : Thread.i
+
+# target to preprocess a source file
+Thread.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Thread.cc.i
+.PHONY : Thread.cc.i
+
+Thread.s: Thread.cc.s
+.PHONY : Thread.s
+
+# target to generate assembly for a file
+Thread.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Thread.cc.s
+.PHONY : Thread.cc.s
 
 Timestamp.o: Timestamp.cc.o
 .PHONY : Timestamp.o
@@ -285,15 +405,30 @@ help:
 	@echo "... Channel.o"
 	@echo "... Channel.i"
 	@echo "... Channel.s"
+	@echo "... CurrentThread.o"
+	@echo "... CurrentThread.i"
+	@echo "... CurrentThread.s"
+	@echo "... DefaultPoller.o"
+	@echo "... DefaultPoller.i"
+	@echo "... DefaultPoller.s"
+	@echo "... EPollPoller.o"
+	@echo "... EPollPoller.i"
+	@echo "... EPollPoller.s"
 	@echo "... EventLoop.o"
 	@echo "... EventLoop.i"
 	@echo "... EventLoop.s"
 	@echo "... InetAddress.o"
 	@echo "... InetAddress.i"
 	@echo "... InetAddress.s"
+	@echo "... Poller.o"
+	@echo "... Poller.i"
+	@echo "... Poller.s"
 	@echo "... TcpServer.o"
 	@echo "... TcpServer.i"
 	@echo "... TcpServer.s"
+	@echo "... Thread.o"
+	@echo "... Thread.i"
+	@echo "... Thread.s"
 	@echo "... Timestamp.o"
 	@echo "... Timestamp.i"
 	@echo "... Timestamp.s"

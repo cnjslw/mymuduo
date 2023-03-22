@@ -33,6 +33,5 @@ private:
     pid_t tid_;
     ThreadFunc func_;
     std::string name_; // 线程名字，方便调试
-    ThreadFunc func_;
     static std::atomic_int numCreated_;
 };
