@@ -1,3 +1,0 @@
-/mnt/e/Projects/CppProjects/mymuduo/CMakeFiles/mymuduo.dir
-/mnt/e/Projects/CppProjects/mymuduo/CMakeFiles/edit_cache.dir
-/mnt/e/Projects/CppProjects/mymuduo/CMakeFiles/rebuild_cache.dir
